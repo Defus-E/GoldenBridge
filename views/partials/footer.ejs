@@ -1,0 +1,119 @@
+<div class="footer">
+	<div class="wrapper">
+		<div class="footer__bottom">
+			<div class="by_creawave"><a href="http://creawave-studios.org" target="_blank">Creawave © 2019 </a>All rights
+				reserved. <a href="">Terms of use </a>and <a href="#">Privacy Policy</a></div>
+		</div>
+	</div>
+</div>
+<div id="getcall" uk-modal="">
+	<div class="uk-modal-dialog uk-modal-body">
+		<h2 class="uk-modal-title">
+			<%= lang.header.form.contacts%>
+		</h2>
+		<button class="uk-modal-close-default" type="button" uk-close></button>
+		<form id="getcall-form" method="POST" action="/contact-us">
+			<input class="uk-input field" type="text" name="name" placeholder="<%= lang.header.form.name%>" autocomplete="off"/>
+			<input class="uk-input field" type="phone" name="phone" pattern="^((\+7|7|8)+([0-9]){10})$" placeholder="<%= lang.header.form.phone%>" autocomplete="off"/>
+			<button class="button" type="submit"><%= lang.header.form.call%></button>
+		</form>
+	</div>
+</div>
+<div id="getorder" uk-modal="">
+	<div class="uk-modal-dialog uk-modal-body">
+		<button class="uk-modal-close-default" type="button" uk-close></button>
+		<h2><%= lang.order_transfer%></h2>
+		<form method="POST" encrypt="multipart/form-data" id="modal-form" action="/order-transfer">
+			<div class="w50">
+				<input class="uk-input field" autocomplete="off" id="name" name="name" type="text" placeholder="<%= lang.order.form.name%>" required />
+				<input class="uk-input field" autocomplete="off" id="phone" name="phone" type="text" placeholder="<%= lang.order.form.phone%>" required />
+			</div>
+			<input class="uk-input field" autocomplete="off" id="email" type="email" name="email" placeholder="<%= lang.order.form.email%>" required />
+			<div id="headDropzone" class="dropzone js-upload uk-placeholder uk-text-center needsclick dz-clickable">
+				<div class="dz-default dz-message">
+					<span class="uk-text-middle"><%= lang.order.form.out_file%></span>
+					<div id="clickHere" uk-form-custom="">
+						<span class="uk-link"><%= lang.order.form.browse%></span>
+					</div>
+				</div>
+			</div>
+			<div id="preview-container-main"></div>
+			<textarea spellcheck="false" id="message" class="uk-textarea field" rows="5" name="message" placeholder="<%= lang.order.form.message%>"
+			required></textarea>
+			<button class="button" id="batch-upload" type="submit"><%= lang.order.form.call%></button>
+		</form>
+	</div>
+</div>
+
+
+
+
+<div id="mmenu" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+
+    	<div class="top-menu">
+    		  <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+    	</div>
+
+
+
+					<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon" uk-nav="">
+                        <li>	<a href="/"><%= lang.header.menu.home%></a></li>
+                        <li class="uk-parent">
+                            <a href="/services/id=1"><%= lang.header.menu.services%></a>
+                            <ul class="uk-nav-sub" aria-hidden="true" hidden="">
+															<li><a href="/services/id=1">
+																	<%= lang.services.business.title%></a></li>
+															<li><a href="/services/id=2">
+																	<%= lang.services.technical.title%></a></li>
+															<li><a href="/services/id=3">
+																	<%= lang.services.legal.title%></a></li>
+															<li><a href="/services/id=4">
+																	<%= lang.services.medical.title%></a></li>
+															<% if (lang.language === 'ru') { %>
+																<li><a href="/services/id=5"><%= lang.services.private.title%></a></li>
+															<% } %>
+															<li><a href="/services/id=6">
+																	<%= lang.services.website_game_software.title%></a></li>
+															<li><a href="/services/id=7">
+																	<%= lang.services.audio_video.title%></a></li>
+															<li><a href="/services/id=8">
+																	<%= lang.services.DTP_design.title%></a></li>
+                            </ul>
+                        </li>
+												<li><a href="/industries/"><%= lang.header.menu.industries%></a>    </li>
+												<li><a href="/blogs/"><%= lang.header.menu.blog%></a>    </li>
+											<li><a href="/contacts/"><%= lang.header.menu.contacts%></a>    </li>
+											<li uk-toggle="target: #getorder"><a><%= lang.order_transfer%></a>    </li>
+
+
+                    </ul>
+
+
+										<div class="mobile_info">
+											<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon" uk-nav="">
+																		<li class="uk-parent">
+																				<a href="#">RU / EN</a>
+																				<ul class="uk-nav-sub" aria-hidden="true" hidden="">
+																					<li><a href="?ru" data-value="ru">RU</a></li>
+																					<li><a href="?en" data-value="en">EN</a></li>
+
+																				</ul>
+																		</li>
+
+																</ul>
+
+											<div class="email"><span uk-icon="icon:mail; ratio:1.1"></span><a href="mailto:info@gnbridge.com">info@gnbridge.com</a></div>
+											<div class="tel"><span uk-icon="icon: receiver; ratio:1.1"></span><a href="tel:7499112-03-70">7499112-03-70</a></div>
+
+
+
+
+										</div>
+
+
+
+    </div>
+</div>
+
+<script src="/js/upload-file.js"></script>

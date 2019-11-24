@@ -1,0 +1,14 @@
+<% layout('./layout/index') -%>
+<% block('title', blog.title[lang.language]) -%>
+
+<div class="page">
+	<div class="clear"></div>
+	<div class="wrapper">
+		<div class="content blog-content"><img class="cover" src="<%= blog.cover%>" />
+			<h1 class="title"><%= blog.title[lang.language]%></h1>
+			<div class="blog-content__text">
+				<%- blog.content[lang.language]%>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Вход в административную панель</title>
+	<script src="/vendor/bower_components/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+	<script>
+		let name, password, confirm;
+
+		requestData();
+
+		function requestData() {
+			name = prompt('Введите имя администратора:');	
+			password = prompt('Введите пароль администратора:');
+
+			sendData();
+		}
+
+		function sendData() { 
+			$.ajax({
+				type: "POST",
+				url: "/login",
+				data: {name, password},
+				dataType: "JSON",
+				statusCode: {
+					200: (res) => {
+						window.location.href = '/backend/blog/';
+					},
+					403: (jqXHR) => {
+						const error = JSON.parse(jqXHR.responseText);
+
+						alert(error.reason);
+						requestData();
+					}
+				}
+			});
+		 };
+	</script>
+</body>
+
+</html>

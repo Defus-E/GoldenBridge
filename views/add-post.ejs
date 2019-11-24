@@ -1,0 +1,69 @@
+<% layout('./layout/admin') -%>
+<% block('title', 'Добавить пост') -%>
+
+<div class="nav">
+	<a class="button active" href="/backend/blog/">Блог | Добавить пост</a>
+	<a class="button" href="/backend/settings/">Настройки</a>
+	<a class="button" href="" onclick="$(document.body).append($('<form method=POST action=/logout>'));$('form').submit();return false">Выход</a>
+</div>
+<div class="content">
+	<div class="uk-margin">
+		<div class="lang">
+			<ul class="uk-subnav" uk-margin="">
+				<li class="uk-active"><a href="#" data-value="ru">RUS</a></li>
+				<li><a href="#" data-value="en">ENG</a></li>
+			</ul>
+		</div>
+		<hr />
+	</div>
+	<form method="POST" encrypt="multipart/form-data" action="/add-post">
+		<div data-value="ru" class="form-deactive active-form">
+			<div class="uk-margin">
+				<label class="uk-form-label">Заголовок поста</label>
+				<input class="uk-input field" name="ru_title" type="text" placeholder="Заголовок" autocomplete="off" required />
+			</div>
+			<label class="uk-form-label">Обложка поста</label>
+			<div id="myDropzone" class="dropzone needsclick dz-clickable js-upload uk-placeholder uk-text-center">
+				<div class="dz-default dz-message">
+					<span class="uk-text-middle">Перетяните файл сюда</span>
+					<div id="clickHere" uk-form-custom="">
+						<span class="uk-link">нажмите, чтобы выбрать</span>
+					</div>
+				</div>
+			</div>
+			<div id="preview-container"></div>
+			<div class="uk-margin">
+				<label class="uk-form-label">Текст поста</label>
+				<textarea spellcheck="false" id="message" class="uk-textarea field" name="ru_content" rows="5" placeholder="Текст"
+				 autocomplete="off" required></textarea>
+			</div>
+		</div>
+		<div data-value="en" class="form-deactive">
+			<div class="uk-margin">
+				<label class="uk-form-label">Post title</label>
+				<input class="uk-input field" name="en_title" type="text" placeholder="Title" autocomplete="off" required />
+			</div>
+			<label class="uk-form-label">Text post</label>
+			<textarea spellcheck="false" id="message" class="uk-textarea field" name="en_content" rows="5" placeholder="Text"
+			 autocomplete="off" required></textarea>
+		</div>
+		<div class="uk-margin">
+			<button class="button" type="submit" style="cursor: pointer">Опубликовать пост</button>
+		</div>
+	</form>
+</div>
+
+<script src="/js/add-post.js" defer></script>
+<script>
+	$('.uk-subnav').on('click', 'a', function (e) {
+		e.preventDefault();
+		$('.uk-subnav li').removeClass('uk-active');
+		$('.content').find('#preview-container').attr('id', '');
+		$('.content').find('.active-form').removeClass('active-form');
+
+		$(this).parent().addClass('uk-active');
+
+		$('.form-deactive').eq($($(this).parent()).index()).addClass('active-form');
+		$('.dropzone').eq($($(this).parent()).index()).next().attr('id', 'preview-container');
+	});
+</script>

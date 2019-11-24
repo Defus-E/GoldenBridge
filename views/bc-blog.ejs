@@ -1,0 +1,32 @@
+<% layout('./layout/admin') -%>
+<% block('title', 'Панель управления - Блог') -%>
+
+<div class="nav">
+	<a class="button active" href="/backend/blog/">Блог</a>
+	<a class="button" href="/backend/settings/">Настройки</a>
+	<a class="button" href="" onclick="$(document.body).append($('<form method=POST action=/logout>'));$('form').submit();return false">Выход</a>
+</div>
+<div class="content">
+	<table class="uk-table">
+		<a href="/backend/blog/add-post" class="button" style="width: 148.25px">Новый пост</a>
+		<thead>
+			<tr>
+				<th class="uk-table-expand">Заголовок</th>
+				<th class="uk-width-small">Управление</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% blogData.forEach(blog => { %>
+			<tr>
+				<td><%= blog.title%></td>
+				<td class="controls">
+					<a href="/backend/blog/edit-post/id=<%= blog.id%>" uk-icon="pencil" ratio="1" title="Редактировать"></a>
+					<a href="#" class="delete-post" uk-icon="trash" ratio="1" title="Удалить"></a>
+				</td>
+			</tr>
+			<% }) %>
+		</tbody>
+	</table>
+</div>
+
+<script src="/js/delete-post.js" defer></script>

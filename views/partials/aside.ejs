@@ -1,0 +1,22 @@
+<div class="aside">
+	<ul uk-sticky="bottom: true;">
+		<% if (lang.language == 'ru') { %>
+			<li><a class="<%= id === 1 ? 'active' : ''%>" href="/services?id=1">Перевод корпоративной документации</a></li>
+			<li><a class="<%= id === 2 ? 'active' : ''%>" href="/services?id=2">Технический перевод</a></li>
+			<li><a class="<%= id === 3 ? 'active' : ''%>" href="/services?id=3">Юридический перевод</a></li>
+			<li><a class="<%= id === 4 ? 'active' : ''%>" href="/services?id=4">Медицинский перевод</a></li>
+			<li><a class="<%= id === 5 ? 'active' : ''%>" href="/services?id=5">Перевод личной документации</a></li>
+			<li><a class="<%= id === 6 ? 'active' : ''%>" href="/services?id=6">Перевод сайтов, локализация игр и ПО</a></li>
+			<li><a class="<%= id === 7 ? 'active' : ''%>" href="/services?id=7">Перевод аудио/видео</a></li>
+			<li><a class="<%= id === 8 ? 'active' : ''%>" href="/services?id=8">Верстка и графическое оформление материалов</a></li>
+		<% } else { %>
+			<li><a class="<%= id === 1 ? 'active' : ''%>" href="/services?id=1">Business translation</a></li>
+			<li><a class="<%= id === 2 ? 'active' : ''%>" href="/services?id=2">Technical translation</a></li>
+			<li><a class="<%= id === 3 ? 'active' : ''%>" href="/services?id=3">Legal translation</a></li>
+			<li><a class="<%= id === 4 ? 'active' : ''%>" href="/services?id=4">Medical translation</a></li>
+			<li><a class="<%= id === 5 ? 'active' : ''%>" href="/services?id=5">Website and Mobile APP translation, game and software localization</a></li>
+			<li><a class="<%= id === 6 ? 'active' : ''%>" href="/services?id=6">Audio/video translation</a></li>
+			<li><a class="<%= id === 7 ? 'active' : ''%>" href="/services?id=7">DTP services and design</a></li>
+		<% } %>
+	</ul>
+</div>

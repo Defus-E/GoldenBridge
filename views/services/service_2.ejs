@@ -1,0 +1,28 @@
+<% layout('../layout/index') -%>
+<% block('title', lang.services.technical.title) -%>
+
+<div class="page">
+	<div class="clear"></div>
+	<div class="wrapper">
+		<div class="content">
+			<h2><%= lang.services.technical.title%></h2>
+			<p><%= lang.services.technical.content.p1%></p>
+			<p><%= lang.services.technical.content.p2%></p>
+			<p><%= lang.services.technical.content.p3%></p>
+			<ul>
+				<% for (let i = 0; i < lang.services.technical.content.list1.length; i++) { %>
+					<li><%= lang.services.technical.content.list1[i]%></li>
+				<% } %>
+			</ul>
+			<p><%= lang.services.technical.content.p4%></p>
+			<ul>
+			<% for (let i = 0; i < lang.services.technical.content.list2.length; i++) { %>
+			<li><%= lang.services.technical.content.list2[i]%></li>
+		<% } %>
+			</ul>
+			<p><%= lang.services.technical.content.p5%></p>
+			<%-partial('../partials/form')%>
+		</div>
+		<%-partial('../partials/aside')%>
+	</div>
+</div>

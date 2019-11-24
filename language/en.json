@@ -1,0 +1,248 @@
+{
+	"language": "en",
+	"titles": {
+		"home": "Home",
+		"industries": "Industries",
+		"blog": "Blog",
+		"team": "Team",
+		"contacts": "Contact us",
+		"order_transfer": "Get a free quote"
+	},
+	"order_transfer": "Get a free quote",
+	"header": {
+		"menu": {
+			"home": "Home",
+			"services": "Services",
+			"industries": "Industries",
+			"blog": "Blog",
+			"contacts": "Contact us",
+			"order_transfer": "Get a free quote"
+		},
+		"form": {
+			"contacts": "Contact us",
+			"name": "Name",
+			"phone": "Phone number",
+			"call": "Submit"
+		},
+		"contacts": "Contact us",
+		"order_transfer": "Get a free quote",
+		"translation": "Your Translation Manager for business and personal communication" 
+	},
+	"GBridge": {
+		"agency": {
+			"name": "Golden Bridge",
+			"desc": "Translation Team"
+		},
+		"info": {
+			"p1": "The Golden Bridge is a professional translation team providing translation services from/into foreign languages. Our mission is translation and localization content in more than 90 languages for companies all around the world, from Europe to North America, including China, Japan and Russia.",
+			"p2": "The Golden Bridge translation team is based on the principle to provide accurate translation at affordable prices to customers all around the world. Our translation team has extensive experience in various subjects, including economic and legal texts, customs documentation and certification of goods. To improve the quality of translations, we work closely with practitioners in the fields of medicine, law, finance, accounting, engineering, etc.",
+			"p3": "As part of our services, we offer a commitment to exceptional customer service and excellent translation quality. Our professional linguists and customer service representatives are always available to help customers by email, phone or Skype.",
+			"p4": "With a global vision and a local approach to customer service, Golden Bridge offers a high-quality solution for all translation and localization needs. We combine the latest technology with the efforts of experienced linguists, striving to establish long-term partnerships with our clients, providing accurate translations at excellent prices."
+		}
+	},
+	"services": {
+		"business": {
+			"title": "Business translation",
+			"content": {
+				"p1": "Almost everyone may need a translation to foreign languages. It is especially true in the current era celebrating the progress in the field of IT. Today, technologies have improved so far, that being in London you can easily communicate with someone in China. Although there are enough communication channels, this all falls apart when it comes to the gap between languages that we need to overcome.",
+				"p2": "The gap between languages causes problems for individuals as well as institutions from different cultures when communicating to each other. Also, individuals, businesses and experts providing their services in foreign countries encounter obstacles to communicating with their clients. The obvious solution to this problem is language translation.",
+				"p3": "Language translation may be required for a variety of purposes, from translating personal letters and e-mails to academic books and researches, to translating various business documents.",
+				"p4": "Translation of documents is not a joke. Free translation is usually done by a software, which does not deal with such differences between languages, as grammar, structure, idioms, cultural aspect, etc. That is why free translations are usually fallible and unsatisfactory. Thus, it is not a good idea to rely on machine-aided translation of important documents.",
+				"p5": "Business translation should be done by professional translators who combine proven linguistic ability and relevant business knowledge. It is when Golden Bridge Translation Team is there for.",
+				"p6": "We are a professional translation team that consists of many of translators around the world. Professional translators working with us specialize in a wide variety of language pairs, as well as in various fields of activity. It allows us to provide high-quality translation in almost all areas of business and for almost any language pair.",
+				"p7": "We regularly translate catalogs, menus, price lists, business proposals, description of goods or services, business presentations, business correspondence, labels, etc. To find out the cost of your translation, use the Order Form.",
+				"p8": "If you have any special requirements or questions, contact us via our Contact Form."
+			}
+		},
+		"technical": {
+			"title": "Technical translation",
+			"content": {
+				"p1": "Commercial and industrial activity of modern companies is certain to require technical texts written in foreign languages.",
+				"p2": "For example, there may be an installation manual for a new equipment, or a maintenance guide for special-equipment vehicles. Sometimes, a company has an employee who knows the relevant language, can read the document by his own and perform a comprehensive translation. In this case, the manual becomes understandable for other workers.",
+				"p3": "Yet, papers are often written in rare languages, and the company does not have a professional translator. Then, it is crucial to find a translation team immediately. Golden Bridge has many years' experience in technical translation. We perform it correctly and thoroughly. Our team can handle more than 50 languages and work with the following types of documents",
+				"list1": [
+					"Maintenance/installation/commissioning and start-up/etc. instructions and guides",
+					"Technical specification documents",
+					"Scientific reports",
+					"Design documentation",
+					"Drawings, layouts and other"
+				],
+				"p4": "The cost of translation of technical texts is calculated on an individual basis and depends on the following facts:",
+				"list2": [
+					"The need to involve focused specialists in proofreading (if the matter is complex)",
+					"Source material format (drawings and layouts in Auto Cad, non-editable Jpeg, etc.)",
+					"The urgency of the order"
+				],
+				"p5": "If you want an instant quote, make a request and we will respond to you in 15 minutes."
+			}
+		},
+		"legal": {
+			"title": "Legal translation",
+			"content": {
+				"p1": "Legal translation is the translation of legal documents and concepts within the field of law. This sphere of translation requires highly skilled specialists. Legal translation should be done by professionals who know legal terms in both languages, understand their meanings and ensure 100% accuracy of translation.",
+				"p2": "Legal translation should be exact and unambiguous. These purposes require professional translators who have substantial work experience in the sphere or legal translation.",
+				"p3": "Legal translation involves translation of court judgements, agreements and other legal contracts. This sphere needs professional translation.",
+				"p4": "Another key field of legal translation is translation of insurance documents, which must be completely accurate as well. Insurance documents contain a lot of technical terms. That is why, to consult a professional translator with experience in translating such type of legal documents is a wise decision.",
+				"p5": "Another type of legal translation is translation of real estate documents. Whether you are buying a house abroad, or trying to work out real estate documents for the property in another country that you have inherited from a relative, lack of language knowledge can be a stressful challenge for you. Professional translation can relieve you of these troubles and help you to understand completely the content of your documents.",
+				"p6": "Golden Bridge provides legal translation services performed by highly qualified and experienced professional translators covering a wide range of languages. Our large team of professionals specializing in legal translating allows us to provide clients from all over the world with translations from almost all languages.",
+				"p7": "We provide different types of legal translations:",
+				"list": [
+					"Translation of agreements",
+					"Translation of trademarks and patent applications",
+					"Translation of court documents",
+					"Translation of immigration documents",
+					"Legal disclaimer",
+					"Translation of establishment documents",
+					"Translation of arbitration documents",
+					"Translation of confidentiality agreements",
+					"Translation of legislation acts of governmental authorities",
+					"Translation of licenses"
+				],
+				"p8": "We understand the importance of confidentiality in legal translation and handle all such documents with the highest level of security. Our outstanding team of professionals allows us to select the most suitable translator or team of translators for each legal translation project",
+				"p9": "Golden Bridge can meet all your legal translation requirements. For more information, please use the Order Form."
+			}
+		},
+		"medical": {
+			"title": "Medical translation",
+			"content": {
+				"p1": "Today, Russians go for treatment and rest abroad more and more frequently. On the other hand, foreigners are also coming to Russia for treatment, operations, examinations, etc. more often. Our country is supplied with a large number of modern medical equipment, advanced technologies, medicines, materials, etc. These reasons have increased the need for translations of numerous medical papers.",
+				"p2": "The Translation Team offers translation of medical texts from a foreign language into Russian and from Russian into a foreign language. When you order this service in our team, you can be absolutely sure that you will get a high-quality and grammatically correct translation made by a linguist with medical education, and then checked by a special reviewer.",
+				"p3": "We provide translation services for the following documents:",
+				"list": [
+					"translation of clinical trials of drugs, instructions to drugs, certificates of registration of medicinal products, pharma toxicological documentation, security reports, etc.",
+					"translation of technical documentation (instructions, manuals, descriptions, etc.) for medical equipment and software translation of medical articles, presentations, manuals, medical literature, scientific papers, reports, articles, abstracts, etc.",
+					"translation of medical advertising materials, descriptions of production processes, medical sites translation of medical certificates, discharge summaries, operative notes, clinical data sheets, questionnaires, diagnoses, inquiries",
+					"translation of clinical reports (discharge summaries), anamnesis, examinations, results of tests and examinations, certificates, informed consents"
+				],
+				"p4": "consents If you want an instant quote, make a request and we will respond to you in 15 minutes."
+			}
+		},
+		"private": {
+			"title": "Translation of personal documentation"
+		},
+		"website_game_software": {
+			"title": "Website and Mobile APP translation, game and software localization",
+			"content": {
+				"p1": "Customers of Golden Bridge Translation Team can request a translation of a website. If you are an entrepreneur and plan to move beyond the Russian market and cooperate with foreigners, you can do it accurately and comprehensively with the help of professional translators from Golden Bridge Translation Team!",
+				"p2": "The company's website is its main page in the Internet. The website can show foreign partners how promising the cooperation may be. It determines the importance of a professional translation. Since we live in the age of quickly developing technology, one would better have a site in several foreign languages. If you do not speak foreign languages, do not worry - we will do all the hard work for you.",
+				"subtitle1": "Translation of website content",
+				"p3": "Content is the key element of any site. We are experienced translators who guarantee the client an excellent result at the highest level. Our translators specialize in translation of various sites. Besides, a client can require help with localization of games.",
+				"subtitle2": "Translation of restricted access information",
+				"p4": "Exterior of a site is only a tip of an iceberg seen by users. Interior of a site contains information with restricted access (meta tags, short description of materials, page titles, etc.), invisible to the user.",
+				"p5": "Exterior of a site shown to its user is only a tip of an iceberg. Any site also consists of restricted access information that its user does not see. This should include meta tags, text descriptions, page titles, etc. We provide translation services for the entire structure of the site.",
+				"subtitle3": "Deadline",
+				"p6": "The deadline in each case differs and is negotiated individually. We will appoint an experienced team of translators, reviewers and native speakers according to your requirements.",
+				"p7": "If you want an instant quote, make a request and we will respond to you in 15 minutes."
+			}
+		},
+		"audio_video": {
+			"title": "Audio/video translation",
+			"content": {
+				"p1": "Beside ordinary written translation, Golden Bridge provide such services, as:",
+				"list": [
+					"audio translation (performances, audio lessons, presentations, reports, business films);",
+					"video translation (ad and business videos, films, animation, on-line lessons, etc.)",
+					"transcription of audio and video materials;"
+				],
+				"p2": "We offer a full range of audio and video translation services from video file conversion and transcription to voice and subtitle creation.",
+				"p3": "If there is no 'script', i.e. the text of the video, transcription is needed. In other words, a specialist listening to the text in Russian or a foreign language creates a written version of the source material for translation. 'Script' contains timecode, which denotes the beginning of speech to the nearest second.",
+				"p4": "This is followed by the translation of the text of the 'script'. The main thing in this process is the exact correspondence to the source material, both in terms of the content of phrases and their length.",
+				"p5": "Then, we put subtitles and dub the video.",
+				"p6": "The cost of audio/video translation is calculated on an individual basis and depends on the length of the track, intelligibility of pronunciation, rate of speech, and the subject, which determines how quickly and easily the translation can be done.",
+				"p7": "Our team is ready to translate audio and video for you into the specified language in compliance with all the details of your file and peculiarities of the language. You will get the translation in writing with indications of time intervals (timecode). If necessary, we may highlight roles and/or deliver the transcription.",
+				"p8": "If you want an instant quote, make a request and we will respond to you in 15 minutes."
+			}
+		},
+		"DTP_design": {
+			"title": "DTP services and design",
+			"content": {
+				"p1": "DTP services are crucial if you want to preserve the original design of a document or a file in the translation. DTP agreeing with the original should save the layout of text, diagrams and drawings, graphs, tables and illustrations, as well as provide a relevant file translated into another language. It becomes critical when it comes to high-quality technical documentation, booklets, brochures, catalogues, books and presentations.",
+				"p2": "Golden Bridge Translation Team is ready to provide you with DTP for documentation that allows you to comply with the original text formatting completely.",
+				"p3": "It should be noted that DTP service for a translated text is a service frequently executed by Golden Bridge Translation Team, as well as editing or proofreading by a person with a high level of foreign language proficiency. We involve DTP specialists. Our experts are not only good at this particular task, but also know a foreign language. After them, a reviewer formats the text.",
+				"p4": "The rate of DTP and graphic design services is set on an individual basis.",
+				"p5": "The deadline depends on:",
+				"list": [
+					"Source material format (drawings and layouts in Auto Cad, non-editable Jpeg, etc.)",
+					"The urgency of the order.",
+					"Complexity of matter",
+					"The need to develop a unique design."
+				]
+			}
+		},
+		"IT": {
+			"title": "Information Technology Translation"
+		},
+		"financial": {
+			"title": "Financial translation"
+		},
+		"oil_gas": {
+			"title": "Oil and gas translation"
+		},
+		"energy": {
+			"title": "Energy Translation"
+		},
+		"marketing": {
+			"title": "Marketing translation"
+		},
+		"mechanical_engineering": {
+			"title": "Translation in mechanical engineering"
+		},
+		"construction": {
+			"title": "Translation in the field of construction"
+		}
+	},
+	"garant": {
+		"why": "Why choose us?",
+		"info1": {
+			"title": "Accurate adherence to deadlines",
+			"text": "Fill in the online order form and assign the time of translation delivery"
+		},
+		"info2": {
+			"title": "100% confidentiality",
+			"text": "Confidentiality of data and guarantee of non-disclosure of information"
+		},
+		"info3": {
+			"title": "Quality of translations",
+			"text": "Qualified translators from around the world whom have been working since 2012. We take full responsibility for the fulfillment of your order."
+		},
+		"info4": {
+			"title": "Expertise and professionalism",
+			"text": "The ability to perform translations as a specialist in the industry and the involvement of native speakers."
+		}
+	},
+	"order": {
+		"form": {
+			"name": "Your Name",
+			"phone": "Phone Number",
+			"email": "E-mail",
+			"out_file": "Upload a document or",
+			"browse": "Browse..",
+			"message": "Additional details/comments: source and target language, delivery",
+			"call": "Submit"
+		},
+		"request": "Request A Quote",
+		"message": "You can get an instant quote or send us your contact details and one of our team members will get back to you within a few minutes.",
+		"contacts": "Contact Us"
+	},
+	"itsworks": {
+		"how": "How does this work?",
+		"p1": "The customer leaves a request",
+		"p2": "The manager processes the order",
+		"p3": "A translator or a team of specialists is selected",
+		"p4": "Database, translation tools selection",
+		"p5": "Translation is sent to the editor and proofreader",
+		"p6": "Delivery of the order to the customer"
+	},
+	"blog": {
+		"load": "Load more"
+	},
+	"error": {
+		"return": "Back to home"
+	},
+	"contacts": {
+		"contact": "Contact Us",
+		"title": "Golden Bridge Translation Team",
+		"header": "Your Translation Manager for business and personal communication",
+		"phone": "Phone Number"
+	}
+}

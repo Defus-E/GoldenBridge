@@ -1,0 +1,61 @@
+<div class="loader"><span class="uk-margin-small-right" uk-spinner="ratio: 3"></span></div>
+<div class="header-clear"></div>
+<div class="header-mobile">
+	<div class="logo">
+
+	</div>
+	<a class="menu" href="#mmenu" uk-toggle>
+		<i uk-icon="icon: menu; ratio:1.5"></i>
+	</a>
+</div>
+<div class="header">
+	<div class="wrapper">
+
+		<div class="header__top">
+			<div class="left">
+				<div class="logo"></div>
+			</div>
+			<div class="right">
+				<div class="email"><span uk-icon="icon:mail; ratio:1.1"></span><a href="mailto:info@gnbridge.com">info@gnbridge.com</a></div>
+				<div class="tel"><span uk-icon="icon: receiver; ratio:1.1"></span><a href="tel:7499112-03-70">+7-9244533375 </a></div>
+				<div class="lang"><a href="#"><img src="/img/<%= lang.language%>.png" alt="" />RU / EN</a>
+					<div uk-dropdown="delay-hide: 0">
+						<ul class="uk-nav uk-dropdown-nav">
+							<li><a href="?ru" data-value="ru"><img src="/img/ru.png" alt="" />RU</a></li>
+							<li><a href="?en" data-value="en"><img src="/img/en.png" alt="" />EN</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="nav">
+				<a href="/"><%= lang.header.menu.home%></a>
+				<a href="/services?id=1"><%= lang.header.menu.services%></a>
+				<div uk-dropdown="delay-hide: 0">
+					<ul class="uk-nav uk-dropdown-nav">
+						<li><a href="/services?id=1"><%= lang.services.business.title%></a></li>
+						<li><a href="/services?id=2"><%= lang.services.technical.title%></a></li>
+						<li><a href="/services?id=3"><%= lang.services.legal.title%></a></li>
+						<li><a href="/services?id=4"><%= lang.services.medical.title%></a></li>
+						<% if (lang.language === 'ru') { %>
+							<li><a href="/services?id=5"><%= lang.services.private.title%></a></li>
+							<li><a href="/services?id=6"><%= lang.services.website_game_software.title%></a></li>
+							<li><a href="/services?id=7"><%= lang.services.audio_video.title%></a></li>
+							<li><a href="/services?id=8"><%= lang.services.DTP_design.title%></a></li>
+						<% } else { %>
+							<li><a href="/services?id=5"><%= lang.services.website_game_software.title%></a></li>
+							<li><a href="/services?id=6"><%= lang.services.audio_video.title%></a></li>
+							<li><a href="/services?id=7"><%= lang.services.DTP_design.title%></a></li>
+						<% } %>
+					</ul>
+				</div>
+				<a href="/industries/"><%= lang.header.menu.industries%></a>
+				<a href="/blogs/"><%= lang.header.menu.blog%></a>
+				<a href="/contacts/"><%= lang.header.menu.contacts%></a>
+				<div uk-toggle="target: #getorder" style="cursor: pointer"><a>
+						<%= lang.order_transfer%></a></div>
+			</div>
+		</div>
+	</div>
+</div>

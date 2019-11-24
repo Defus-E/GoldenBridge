@@ -1,0 +1,37 @@
+{
+	"mongoose": {
+		"uri": "mongodb://admin:flvby228@ds137605.mlab.com:37605/console",
+		"options": {
+			"useNewUrlParser": true,
+			"useFindAndModify": false,
+			"useCreateIndex": true,
+			"keepAlive": 1
+		}
+	},
+	"mailer": {
+		"host": "smtp.gmail.com",
+		"email": "denislavrovka@gmail.com",
+		"password": "228lilitdevil228"
+	},
+	"session": {
+		"secret": "^#$5sX(Hf6KUo!#65^",
+		"name": "sid",
+		"cookie": {
+			"path": "/",
+			"httpOnly": true,
+			"maxAge": 86400000
+		}
+	},
+	"google-api-auth": {
+		"type": "OAuth2",
+		"user": "gnbridgerecipient@gmail.com",
+		"clientId": "24875027526-96hnl0ntl4i50f1mj6l536rekg61lk61.apps.googleusercontent.com",
+		"clientSecret": "QMEXyfGl6loo56lEbOi5Ccxa",
+		"refreshToken": "1/7Z_g-ZnpO6ncoQ-yIKMP22jrW5-iyu39x7rdzzLRG1I",
+		"accessToken": "ya29.GlvcBnlbznm08HL46z2j3x84EzdTgZ2yG60bc3XRo0EGbyrZRFojQIMj4rHU6eq9w3e_oC43cFdKvLx1ZrdvQbbVu15lox5WbLbsER_4cKWart8XTmWQ-Z5zQGss",
+		"expires": 1484314697598
+	},
+	"admin": {
+		"id": "5c63024053a24a2bd45c1e3b"
+	}
+}

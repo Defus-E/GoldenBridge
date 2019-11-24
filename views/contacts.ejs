@@ -1,0 +1,72 @@
+<% layout('./layout/index') -%>
+<% block('title', lang.titles.contacts) -%>
+
+<div class="page">
+	<div class="clear"></div>
+	<% if (lang.language === "en") { %>
+		<div style="text-align:center">
+			<h3 class="title" style="margin-top: 10px; margin-bottom: 0"><%= lang.contacts.title%></h3>
+			<h4 class="sub-title" style="margin-top: 3px"><%= lang.contacts.header%></h4>
+		</div>
+	<% } %>
+	<div class="wrapper">
+	  <div class="content">
+		 <div class="contacts">
+			<h2><%= lang.contacts.contact%></h2>
+			<div class="contact">
+			  <div>
+				<% if (lang.language === "ru") { %>
+					<p>
+						<h4 class="title"><%= lang.contacts.title%></h4>
+						<h6 class="sub-title"><%= lang.contacts.header%></h6>
+					</p>
+				<% } %>
+				 <h5><%= lang.contacts.phone%></h5>
+				 <p class="tells"><a href="tel:7-924-45-333-75" target="_blank">7-924-45-333-75</a><a href="tel:7-983-4-20-05-50" target="_blank">7-983-4-20-05-50</a></p>
+				 <h5>Whatsapp, Viber</h5>
+				 <p class="tells"><a href="#!" target="_blank">7-983-4-20-05-50</a></p>
+				 <p class="tells"><a target="_blank" href="skype:anutaa1989?chat">skype: anutaa1989</a><a target="_blank" href="/">www.gnbridge.com</a><a target="_blank" href="mailto:info@gnbridge.com">info@gnbridge.com</a></p>
+				 <%- lang.language === "en" ? "<h5>30, 105 district, Ulan-Ude city, Russia</h5>" : "" %>
+				 <img src="/img/qrcode.jpg" alt="Не удалось загрузить QR-Code">
+			  </div>
+			  <div>
+					<% if (lang.language === "en") { %>
+						<div style="padding: 10px 0;background: #202e64;border-radius: 32px;text-align:  center;-webkit-transition: all 0.5s;transition: all 0.5s;width: 37%;margin-bottom:11px">	  
+						<a style="color: #fff;font: 400 17px/18px &quot;Roboto&quot;, Helvetica, Arial, san-serif; cursor: text"><%= lang.order_transfer%></a>
+					</div>
+					<form method="POST" encrypt="multipart/form-data" id="just-form" action="/order-transfer">
+						<div class="w50">
+							<input class="uk-input field" autocomplete="off" id="name" name="name" type="text" placeholder="<%= lang.order.form.name%>" required />
+							<input class="uk-input field" autocomplete="off" id="phone" name="phone" pattern="^((\+7|7|8)+([0-9]){10})$" type="text" placeholder="<%= lang.order.form.phone%>" required />
+						</div>
+						<input class="uk-input field" autocomplete="off" id="email" type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" name="email" placeholder="<%= lang.order.form.email%>" required />
+						<div id="myDropzone" class="dropzone js-upload uk-placeholder uk-text-center needsclick dz-clickable">
+							<div class="dz-default dz-message">
+								<span class="uk-text-middle"><%= lang.order.form.out_file%></span>
+								<div id="clickHere" uk-form-custom="">
+									<span class="uk-link"><%= lang.order.form.browse%></span>
+								</div>
+							</div>
+						</div>
+						<div id="preview-container"></div>
+						<textarea spellcheck="false" id="message" class="uk-textarea field" rows="5" name="message" placeholder="<%= lang.order.form.message%>"
+						required></textarea>
+						<button class="button" id="batch-upload" type="submit"><%= lang.order.form.call%></button>
+					</form>
+				  <% } else { %>
+					<p> Адрес: г. Улан-Удэ, 105 мкрн, д. 30-13 </p>
+					<p> (только для корреспонденции и отправки документов) </p>
+					<p> Реквизиты для юридических лиц: </p>
+					<p> Индивидуальный предприниматель Скрипка Анна Олеговна </p>
+					<p> ОГРН И П 317032700020270 </p>
+					<p> Бурятское отделение №8601 ПАО Сбербанк </p>
+					<p> Расчетный счет № 40802810509160005926 </p>
+					<p> К/с 30101810400000000604 </p>
+					<p> БИК 048142604</p>
+				  <% } %>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+	</div>
+ </div>

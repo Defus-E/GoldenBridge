@@ -1,0 +1,35 @@
+{
+	"name": "adminconsole",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "pm2 start gb.js 8081 --watch",
+		"stop": "pm2 stop gb.js",
+		"logs": "pm2 logs"
+	},
+	"author": "Rufus",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"connect-mongo": "^2.0.3",
+		"cookie-parser": "^1.4.4",
+		"ejs": "^2.6.1",
+		"ejs-locals": "^1.0.2",
+		"express": "^4.16.4",
+		"express-error-handler": "^1.1.0",
+		"express-session": "^1.15.6",
+		"formidable": "^1.2.1",
+		"helmet": "^3.21.2",
+		"ip": "^1.1.5",
+		"mongodb": "^3.1.13",
+		"mongoose": "^5.4.19",
+		"morgan": "^1.9.1",
+		"nconf": "^0.10.0",
+		"nodemailer": "^5.1.1",
+		"nodemailer-mailgun-transport": "^1.4.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.10"
+	}
+}

@@ -1,0 +1,26 @@
+<% layout('../layout/index') -%>
+<% block('title', lang.services.audio_video.title) -%>
+
+<div class="page">
+	<div class="clear"></div>
+	<div class="wrapper">
+		<div class="content">
+			<h2><%= lang.services.audio_video.title%></h2>
+			<p><%= lang.services.audio_video.content.p1%></p> 
+			<ul>
+				<% for( let i = 0; i < lang.services.audio_video.content.list.length; i++) { %>
+					<li><%= lang.services.audio_video.content.list[i]%></li>
+				<% } %>
+			</ul>
+			<p><%= lang.services.audio_video.content.p2%></p>
+			<p><%= lang.services.audio_video.content.p3%></p>
+			<p><%= lang.services.audio_video.content.p4%></p>
+			<p><%= lang.services.audio_video.content.p5%></p>
+			<p><%= lang.services.audio_video.content.p6%></p>
+			<p><%= lang.services.audio_video.content.p7%></p><br />
+			<p><%= lang.services.audio_video.content.p8%></p>
+			<%-partial('../partials/form')%>
+		</div>
+		<%-partial('../partials/aside')%>
+	</div>
+</div>

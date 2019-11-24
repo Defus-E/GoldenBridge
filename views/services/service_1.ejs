@@ -1,0 +1,55 @@
+<% layout('../layout/index') -%>
+<% block('title', lang.services.business.title) -%>
+
+<div class="page">
+	<div class="clear"></div>
+	<div class="wrapper">
+		<div class="content">
+			<h2><%= lang.services.business.title%></h2>
+			<p><%= lang.services.business.content.p1%></p>
+			<p><%= lang.services.business.content.p2%></p>
+			<p><%= lang.services.business.content.p3%></p>
+			<p><%= lang.services.business.content.p4%></p>
+			<p><%= lang.services.business.content.p5%></p>
+			<p><%= lang.services.business.content.p6%></p>
+			<p><%= lang.services.business.content.p7%></p>
+			<p><%= lang.services.business.content.p8%></p>
+			<p>
+			<% if (lang.language === "ru") { %>
+				<h2>Базовые тарифы на письменный перевод</h2>
+				<div class="tables">
+					<div class="tline theader">
+						<div class="tsec"> <span>Язык</span></div>
+						<div class="tsec"><span>Цена за страницу</span><span>с иностранного языка на русский язык</span></div>
+						<div class="tsec"><span>Цена за страницу</span><span>с русского языка на иностранный язык</span></div>
+					</div>
+					<div class="tline">
+						<div class="tsec">Европейские языки (французский, немецкий, испанский, итальянский и т.д.)</div>
+						<div class="tsec">650</div>
+						<div class="tsec">700</div>
+					</div>
+					<div class="tline">
+						<div class="tsec">Языки стран СНГ (киргизский, узбекский, казахский, таджикский и т.д.)</div>
+						<div class="tsec">650</div>
+						<div class="tsec">700</div>
+					</div>
+					<div class="tline">
+						<div class="tsec">Восточные языки (китайский, японский, монгольский, корейский и другие)</div>
+						<div class="tsec">900</div>
+						<div class="tsec">1000</div>
+					</div>
+				</div>
+				<div class="ps">
+					<p>* Все тарифы указаны за 1 стандартную страницу перевода (250 слов)</p>
+					<p>** К документам в не редактируемом формате, таким как PDF, JPEG, PPT применяется базовая наценка 15% за
+						сложность оформления исходного формата</p>
+					<p>*** Перевод носителем европейских языков и редких языков рассчитывается с добавочным коэффициентом 30%.</p>
+					<p>**** Перевод с иностранного языка на иностранный (например, с английского языка на китайский язык) выполняется
+						носителем одного из языков, тарифы оговариваются индивидуально по каждой языковой паре.</p>
+				</div>
+				<% } %>
+				<%-partial('../partials/form')%>
+			</p>
+		</div>
+		<%-partial('../partials/aside')%>
+</div>

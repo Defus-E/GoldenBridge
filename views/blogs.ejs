@@ -1,0 +1,31 @@
+<% layout('./layout/index') -%>
+<% block('title', lang.titles.blog) -%>
+
+<div class="page">
+	<div class="clear"></div>
+	<div class="wrapper">
+		<div class="blogs">
+			<div class="blogs-content" data-value="<%= lang.language%>">
+				<% for(let i = 0; i < blogs.length; i++) {
+					const cover = blogs[i].cover.toString('base64') %>
+				<div class="blog-item">
+					<% if (admin) { %>
+						<a href="/backend/blog/edit-post/id=<%= blogs[i]._id%>" class="edit-blog" uk-icon="pencil" ratio="1"></a>
+					<% } %>
+					<a class="blog-content" href="/blogs/id=<%= blogs[i]._id%>">
+						<div class="cover" style="background: url(<%= blogs[i].cover%>) no-repeat"></div>
+						<div class="content-text">
+							<%= blogs[i].title[lang.language]%>
+						</div>
+					</a>
+				</div>
+				<% } %>
+			</div>
+			<% if (blogs.length >= 6) { %>
+				<button class="button" type="button" id="upload-blogs"><%= lang.blog.load%></button>
+			<% } %>
+		</div>
+	</div>
+</div>
+
+<script src="/js/upload-blogs.js"></script>

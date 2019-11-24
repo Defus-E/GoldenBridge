@@ -1,0 +1,20 @@
+<h2><%= lang.order_transfer%></h2>
+<form method="POST" encrypt="multipart/form-data" id="just-form" action="/order-transfer">
+	<div class="w50">
+		<input class="uk-input field" autocomplete="off" id="name" pattern="^[а-яА-Яa-zA-Z0-9]+$" name="name" type="text" placeholder="<%= lang.order.form.name%>" required />
+		<input class="uk-input field" autocomplete="off" id="phone" name="phone" pattern="^((\+7|7|8|+380|\+8|\+1|1)+([0-9]){10})$" type="text" placeholder="<%= lang.order.form.phone%>" required />
+	</div>
+	<input class="uk-input field" autocomplete="off" id="email" type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" name="email" placeholder="<%= lang.order.form.email%>" required />
+	<div id="myDropzone" class="dropzone js-upload uk-placeholder uk-text-center needsclick dz-clickable">
+		<div class="dz-default dz-message">
+			<span class="uk-text-middle"><%= lang.order.form.out_file%></span>
+			<div id="clickHere" uk-form-custom="">
+				<span class="uk-link"><%= lang.order.form.browse%></span>
+			</div>
+		</div>
+	</div>
+	<div id="preview-container"></div>
+	<textarea spellcheck="false" id="message" class="uk-textarea field" rows="5" name="message" placeholder="<%= lang.order.form.message%>"
+	 required></textarea>
+	<button class="button" id="batch-upload" type="submit"><%= lang.order.form.call%></button>
+</form>
